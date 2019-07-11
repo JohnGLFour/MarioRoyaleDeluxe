@@ -1,0 +1,38 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.johngl4.mrfrontend">
+	<uses-permission	android:name="android.permission.INTERNET"/>
+	<uses-permission	android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission	android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<application
+		android:allowBackup="true"
+		android:label="Mario Royale Deluxe"
+		android:icon="@drawable/app_icon"
+		android:largeHeap="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".MainActivity"
+			android:configChanges="orientation|screenSize"
+			android:windowSoftInputMode="stateHidden">
+			<intent-filter>
+				<action	android:name="android.intent.action.MAIN"/>
+				<category	android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".WebviewActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="landscape"
+			android:windowSoftInputMode="stateHidden"/>
+		<activity
+			android:name=".SettingActivity"
+			android:configChanges="orientation|screenSize"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".ChangelogActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:windowSoftInputMode="stateHidden"/>
+	</application>
+</manifest>
