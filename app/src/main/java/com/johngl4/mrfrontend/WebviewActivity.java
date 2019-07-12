@@ -99,16 +99,7 @@ public class WebviewActivity extends AppCompatActivity {
 		webview1.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
 		webview1.loadUrl(set.getString("server", ""));
 		if (set.getString("skinmod", "").equals("1")) {
-			webview1.setWebViewClient(new WebViewClient() { 
-				@Override 
-				public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
-					if (request.getUrl().getPath().contains("smb_skin0.png")) { 
-						(set.getString("skinmodlink", ""));
-						return false;
-					} 
-					else return null; 
-				} 
-			});
+			
 		}
 	}
 	
@@ -144,16 +135,7 @@ public class WebviewActivity extends AppCompatActivity {
 		webview1.clearHistory();
 		webview1.loadUrl(set.getString("server", ""));
 		if (set.getString("skinmod", "").equals("1")) {
-			webview1.setWebViewClient(new WebViewClient() { 
-				@Override 
-				public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-					if (request.getUrl().getPath().contains("smb_skin0.png")) { 
-						view.loadUrl(set.getString("skinmodlink", ""));
-						return false;
-					} 
-					else return super.shouldOverrideUrlLoading(view, request); 
-				} 
-			});
+			
 		}
 	}
 	
