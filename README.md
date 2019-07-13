@@ -1,5 +1,5 @@
 # MarioRoyaleDeluxe
-Switch Servers? ✔ Hide and Show actionbar? ✔ This is the deluxe version of the official Mario Royale app build from scratch and no AppGasyer advertisements. Its a simple webview of the Mario Royale Servers that you can switch.
+Switch Servers? ✔ Hide and Show actionbar? ✔ This is the deluxe version of the official Mario Royale app build from scratch and no AppGesyer advertisements. Its a simple webview of the Mario Royale Servers that you can switch.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/JohnGLFour/MarioRoyaleDeluxe/blob/master/LICENSE)
 
