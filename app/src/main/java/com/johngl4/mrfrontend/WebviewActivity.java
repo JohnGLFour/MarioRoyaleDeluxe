@@ -98,9 +98,6 @@ public class WebviewActivity extends AppCompatActivity {
 		_menu();
 		webview1.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
 		webview1.loadUrl(set.getString("server", ""));
-		if (set.getString("skinmod", "").equals("1")) {
-			
-		}
 	}
 	
 	@Override
@@ -134,9 +131,6 @@ public class WebviewActivity extends AppCompatActivity {
 		super.onResume();
 		webview1.clearHistory();
 		webview1.loadUrl(set.getString("server", ""));
-		if (set.getString("skinmod", "").equals("1")) {
-			
-		}
 	}
 	
 	@Override
