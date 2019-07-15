@@ -5,9 +5,7 @@ android:
     # Things needed to have
     - tools
     - platform-tools
-    - add-on
-    - extra
-
+    
     # The BuildTools version used by the project
     - build-tools-29.0.1
 
